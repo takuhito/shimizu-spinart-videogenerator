@@ -1,0 +1,43 @@
+{
+  "name": "shimizu-spinart",
+  "version": "1.0.0",
+  "main": "electron-main.js",
+  "scripts": {
+    "start": "tsc && electron .",
+    "build": "tsc && electron-builder"
+  },
+  "build": {
+    "appId": "com.spinart.notebooklm-video",
+    "mac": {
+      "category": "public.app-category.productivity",
+      "target": "dmg"
+    },
+    "files": [
+      "out/**/*",
+      "electron-main.js",
+      "electron-preload.js",
+      "index.html",
+      "package.json"
+    ]
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "playwright-core": "^1.57.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.5",
+    "@types/fluent-ffmpeg": "^2.1.28",
+    "@types/node": "^24.10.1",
+    "dotenv": "^17.2.3",
+    "electron": "^39.2.4",
+    "electron-builder": "^26.0.12",
+    "express": "^5.1.0",
+    "fluent-ffmpeg": "^2.1.3",
+    "playwright": "^1.57.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}
